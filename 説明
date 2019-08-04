@@ -1,0 +1,22 @@
+# 作成したコード
+
+opencvで画像を取得し、フーリエ変換と逆変換をリアルタイムに行う
+
+処理の実装
+numpy,cv2をimportする
+imreadで画像を取得し、フーリエ変換の処理を行う
+画像はグレースケールで表示する
+変換結果をパワースペクトルで確認する。
+最後に逆変換で元の画像に戻す。
+返還後には複素数成分が含まれている雨実部を取り出す処理を施す、
+グレースケールで表示するために値を0-255諧調に変更する必要もある。
+
+実行の仕方
+このコードをana.pyとして保存
+AnacondaのターミナルでPythonと入力
+Python ana.pyで実行する
+
+参考にしたサイト
+http://lang.sist.chukyo-u.ac.jp/classes/OpenCV/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html
+https://www.hello-python.com/2018/02/16/numpy%E3%81%A8opencv%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E7%94%BB%E5%83%8F%E3%81%AE%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E5%A4%89%E6%8F%9B%E3%81%A8%E9%80%86%E5%A4%89%E6%8F%9B/
+
